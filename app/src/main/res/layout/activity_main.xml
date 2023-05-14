@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <!-- Question 1 -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="What is your favorite color?" />
+
+        <RadioGroup
+            android:id="@+id/rg_question1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/rb_question1_answer1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Red" />
+
+            <RadioButton
+                android:id="@+id/rb_question1_answer2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Green" />
+
+            <RadioButton
+                android:id="@+id/rb_question1_answer3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Blue" />
+
+            <RadioButton
+                android:id="@+id/rb_question1_answer4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Yellow" />
+        </RadioGroup>
+
+        <!-- Question 2 -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="What is your favorite animal?" />
+
+        <!-- Question 3 -->
+        <RadioGroup
+            android:id="@+id/rg_question2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/rb_question2_answer1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dog" />
+
+            <RadioButton
+                android:id="@+id/rb_question2_answer2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cat" />
+
+            <RadioButton
+                android:id="@+id/rb_question2_answer3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bird" />
+
+            <RadioButton
+                android:id="@+id/rb_question2_answer4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fish" />
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="What is your favorite food?" />
+
+        <RadioGroup
+            android:id="@+id/rg_question3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/rb_question3_answer1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pizza" />
+
+            <RadioButton
+                android:id="@+id/rb_question3_answer2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Burger" />
+
+            <RadioButton
+                android:id="@+id/rb_question3_answer3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sushi" />
+
+            <RadioButton
+                android:id="@+id/rb_question3_answer4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Taco" />
+        </RadioGroup>
+
+        <!-- Question 4 -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="What is your favorite hobby?" />
+
+        <RadioGroup
+            android:id="@+id/rg_question4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/rb_question4_answer1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Reading" />
+
+            <RadioButton
+                android:id="@+id/rb_question4_answer2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Playing video games" />
+
+            <RadioButton
+                android:id="@+id/rb_question4_answer3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sports" />
+
+            <RadioButton
+                android:id="@+id/rb_question4_answer4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Watching movies" />
+        </RadioGroup>
+
+        <!-- Submit button -->
+        <Button
+            android:id="@+id/btn_submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Submit" />
+
+    </LinearLayout>
+
+
+</ScrollView>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
