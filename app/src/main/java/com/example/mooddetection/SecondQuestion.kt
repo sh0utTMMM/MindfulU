@@ -31,7 +31,6 @@ class SecondQuestion : AppCompatActivity() {
 
             //Bundling
 
-
             val bundleAnswer2 = Bundle().apply {
                 if (selectedAnswerQ1 != null) {
                     putInt("selectedAnswerQ1", selectedAnswerQ1)

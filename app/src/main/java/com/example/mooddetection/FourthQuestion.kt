@@ -19,7 +19,6 @@ class FourthQuestion : AppCompatActivity() {
 
         val button = findViewById<Button>(R.id.btn_submit)
 
-
         button.setOnClickListener {
             val radioGroup4 = findViewById<RadioGroup>(R.id.rg_question4)
             val radioButtonId4 = radioGroup4.checkedRadioButtonId

@@ -27,7 +27,7 @@ class ThirdQuestion : AppCompatActivity() {
                 val index3 = radioGroup3.indexOfChild(radioButton3)
                 responses[2] = index3 + 1
             }
-git ad
+
             val bundleAnswer3 = Bundle().apply {
                 if (selectedAnswerQ1 != null) {
                     putInt("selectedAnswerQ1", selectedAnswerQ1)
