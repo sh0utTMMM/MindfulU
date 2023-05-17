@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "229218209508",
+    "project_id": "moodapp-b1680",
+    "storage_bucket": "moodapp-b1680.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:229218209508:android:994ba80df271cbd0ba66f1",
+        "android_client_info": {
+          "package_name": "com.example.mooddetection"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "229218209508-tfdlomcv0pqq2l1rgpif3pp1ls3oghu9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.mooddetection",
+            "certificate_hash": "1cec980b08c09e680cee46a37ceb060f845507f1"
+          }
+        },
+        {
+          "client_id": "229218209508-aik9cofnndua6nngo23tnl7ca31927fm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCsBVPjr8ocJHiigC8I2Ye0uRsRAuo6jYI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "229218209508-aik9cofnndua6nngo23tnl7ca31927fm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -20,9 +20,10 @@
         <activity android:name=".ThirdQuestion" />
         <activity android:name=".FourthQuestion" />
         <activity android:name=".NotificationPage" />
+        <activity android:name=".FirstQuestion" />
 
         <activity
-            android:name=".MainActivity"
+            android:name=".LogInPage"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
