@@ -21,7 +21,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="What is your favorite color?" />
+            android:text="How would you rate your current mental health?" />
 
         <RadioGroup
             android:id="@+id/rg_question1"
@@ -32,25 +32,25 @@
                 android:id="@+id/rb_question1_answer1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Red" />
+                android:text="I take time for myself." />
 
             <RadioButton
                 android:id="@+id/rb_question1_answer2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Green" />
+                android:text="I reach out to friends or family." />
 
             <RadioButton
                 android:id="@+id/rb_question1_answer3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Blue" />
+                android:text="I exercise or participate in physical activities." />
 
             <RadioButton
                 android:id="@+id/rb_question1_answer4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Yellow" />
+                android:text="I engage in creative outlets (art, music, writing, etc.)." />
         </RadioGroup>
 
         <!-- Submit button -->

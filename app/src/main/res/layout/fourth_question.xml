@@ -19,7 +19,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:text="What is your favorite hobby?" />
+        android:text="How do you usually express your emotions?" />
 
     <RadioGroup
         android:id="@+id/rg_question4"
@@ -30,25 +30,25 @@
             android:id="@+id/rb_question4_answer1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Reading" />
+            android:text="Through art or creative activities." />
 
         <RadioButton
             android:id="@+id/rb_question4_answer2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Playing video games" />
+            android:text="By talking or writing about them." />
 
         <RadioButton
             android:id="@+id/rb_question4_answer3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Sports" />
+            android:text="Through physical activity or sports." />
 
         <RadioButton
             android:id="@+id/rb_question4_answer4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Watching movies" />
+            android:text="I have trouble expressing my emotions." />
     </RadioGroup>
 
         <Button

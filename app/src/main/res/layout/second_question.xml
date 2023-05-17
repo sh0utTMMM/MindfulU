@@ -20,7 +20,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
-            android:text="What is your favorite animal?" />
+            android:text="How do you typically handle stress?" />
 
         <!-- Question 2 -->
         <RadioGroup
@@ -32,25 +32,25 @@
                 android:id="@+id/rb_question2_answer1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Dog" />
+                android:text="I take time for myself." />
 
             <RadioButton
                 android:id="@+id/rb_question2_answer2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Cat" />
+                android:text="I exercise or participate in physical activities." />
 
             <RadioButton
                 android:id="@+id/rb_question2_answer3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Bird" />
+                android:text="I reach out to friends or family." />
 
             <RadioButton
                 android:id="@+id/rb_question2_answer4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Fish" />
+                android:text="I engage in creative outlets (art, music, writing, etc.)." />
         </RadioGroup>
 
         <Button

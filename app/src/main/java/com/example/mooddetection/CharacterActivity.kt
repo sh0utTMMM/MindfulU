@@ -1,7 +1,9 @@
 package com.example.mooddetection
 
+import android.content.Intent
 import android.media.Image
 import android.os.Bundle
+import android.widget.Button
 import android.widget.ImageView
 import androidx.appcompat.app.AppCompatActivity
 
@@ -13,8 +15,13 @@ class CharacterActivity : AppCompatActivity() {
 
 
         val ImgCharacter = findViewById<ImageView>(R.id.myCharacter);
-        if(b !== null){
+        if (b !== null) {
             ImgCharacter.setImageResource(b.getInt("imagePath"))
+        }
+
+        findViewById<Button>(R.id.goToNotification).setOnClickListener {
+            val intent = Intent(this, NotificationPage::class.java)
+            startActivity(intent)
         }
     }
 }
