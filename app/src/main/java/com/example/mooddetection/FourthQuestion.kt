@@ -61,5 +61,19 @@ class FourthQuestion : AppCompatActivity() {
             startActivity(intent)
 
         }
+
+        val radioAnswer1 = findViewById<RadioButton>(R.id.rb_question4_answer1)
+        val radioAnswer2 = findViewById<RadioButton>(R.id.rb_question4_answer2)
+        val radioAnswer3 = findViewById<RadioButton>(R.id.rb_question4_answer3)
+        val radioAnswer4 = findViewById<RadioButton>(R.id.rb_question4_answer4)
+
+
+
+        radioAnswer1.background = resources.getDrawable(R.drawable.custom_radiobutton)
+        radioAnswer2.background = resources.getDrawable(R.drawable.custom_radiobutton)
+        radioAnswer3.background = resources.getDrawable(R.drawable.custom_radiobutton)
+        radioAnswer4.background = resources.getDrawable(R.drawable.custom_radiobutton)
+
+
     }
 }

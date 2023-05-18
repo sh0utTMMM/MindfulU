@@ -4,59 +4,87 @@
     android:layout_width="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_height="match_parent"
+    android:background="@color/purple"
     tools:context=".FourthQuestion">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="140dp"
         android:orientation="vertical"
         android:padding="16dp"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="0dp">
 
 
-    <!-- Question 4 -->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="How do you usually express your emotions?" />
-
-    <RadioGroup
-        android:id="@+id/rg_question4"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-        <RadioButton
-            android:id="@+id/rb_question4_answer1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Through art or creative activities." />
-
-        <RadioButton
-            android:id="@+id/rb_question4_answer2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="By talking or writing about them." />
-
-        <RadioButton
-            android:id="@+id/rb_question4_answer3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Through physical activity or sports." />
-
-        <RadioButton
-            android:id="@+id/rb_question4_answer4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="I have trouble expressing my emotions." />
-    </RadioGroup>
-
-        <Button
-            android:id="@+id/btn_submit"
+        <!-- Question 4 -->
+        <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
-            android:text="Submit" />
+            android:textSize="20dp"
+            android:textColor="@color/white"
+            android:layout_marginLeft="20dp"
+            android:text="How do you usually express your emotions?" />
+
+        <RadioGroup
+            android:id="@+id/rg_question4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp">
+
+            <RadioButton
+                android:id="@+id/rb_question4_answer1"
+                android:layout_width="315dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:button="@drawable/custom_radiobutton"
+                android:includeFontPadding="false"
+                android:paddingStart="10dp"
+                android:textSize="16dp"
+                android:text="Through art or creative activities." />
+
+            <RadioButton
+                android:id="@+id/rb_question4_answer2"
+                android:layout_width="315dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:button="@drawable/custom_radiobutton"
+                android:paddingStart="10dp"
+                android:textSize="16dp"
+                android:text="By talking or writing about them." />
+
+            <RadioButton
+                android:id="@+id/rb_question4_answer3"
+                android:layout_width="315dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:button="@drawable/custom_radiobutton"
+                android:paddingStart="10dp"
+                android:textSize="16dp"
+                android:text="Through physical activity or sports." />
+
+            <RadioButton
+                android:id="@+id/rb_question4_answer4"
+                android:layout_width="315dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:button="@drawable/custom_radiobutton"
+                android:paddingStart="10dp"
+                android:textSize="16dp"
+                android:text="I have trouble expressing my emotions." />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/btn_submit"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:textSize="17dp"
+            android:layout_marginLeft="15dp"
+            app:cornerRadius = "15dp"
+            android:text="Next"  />
 
     </LinearLayout>
 

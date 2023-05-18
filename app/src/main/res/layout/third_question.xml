@@ -4,12 +4,13 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_height="match_parent"
+    android:background="@color/purple"
     tools:context=".ThirdQuestion">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="96dp"
+        android:layout_marginTop="140dp"
         android:orientation="vertical"
         android:padding="16dp"
         app:layout_constraintTop_toTopOf="parent"
@@ -20,44 +21,69 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
+            android:textSize="20dp"
+            android:textColor="@color/white"
+            android:layout_marginLeft="20dp"
             android:text="What type of setting makes you feel most at peace?" />
 
         <RadioGroup
             android:id="@+id/rg_question3"
             android:layout_width="match_parent"
-            android:layout_height="195dp">
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp">
 
             <RadioButton
                 android:id="@+id/rb_question3_answer1"
-                android:layout_width="wrap_content"
+                android:layout_width="315dp"
                 android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:button="@drawable/custom_radiobutton"
+                android:includeFontPadding="false"
+                android:paddingStart="10dp"
+                android:textSize="16dp"
                 android:text="A cozy indoor space." />
 
             <RadioButton
                 android:id="@+id/rb_question3_answer2"
-                android:layout_width="wrap_content"
+                android:layout_width="315dp"
                 android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:button="@drawable/custom_radiobutton"
+                android:paddingStart="10dp"
+                android:textSize="16dp"
                 android:text="A quiet, secluded place." />
 
             <RadioButton
                 android:id="@+id/rb_question3_answer3"
-                android:layout_width="wrap_content"
+                android:layout_width="315dp"
                 android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:button="@drawable/custom_radiobutton"
+                android:paddingStart="10dp"
+                android:textSize="16dp"
                 android:text="A bustling city." />
 
             <RadioButton
                 android:id="@+id/rb_question3_answer4"
-                android:layout_width="wrap_content"
+                android:layout_width="315dp"
                 android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:button="@drawable/custom_radiobutton"
+                android:paddingStart="10dp"
+                android:textSize="16dp"
                 android:text="A natural setting like a forest or beach." />
         </RadioGroup>
 
         <Button
             android:id="@+id/btn_submit"
-            android:layout_width="match_parent"
+            android:layout_width="320dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
-            android:text="Submit" />
+            android:textSize="17dp"
+            android:layout_marginLeft="15dp"
+            app:cornerRadius = "15dp"
+            android:text="Next" />
 
     </LinearLayout>
 

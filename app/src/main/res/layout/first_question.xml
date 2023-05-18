@@ -4,31 +4,37 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/purple"
     tools:context=".FirstQuestion">
 
-<ScrollView
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
-    
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="140dp"
         android:orientation="vertical"
         android:padding="16dp"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="0dp">
 
         <!-- Question 1 -->
+
+        <!-- Submit button -->
+
         <TextView
-            android:layout_width="match_parent"
+            android:layout_width="350dp"
             android:layout_height="wrap_content"
-            android:text="How would you rate your current mental health?" />
+            android:text="How would you rate your current mental health?"
+            android:textColor="@color/white"
+            android:layout_marginLeft="20dp"
+            android:textSize="20dp" />
 
         <RadioGroup
             android:id="@+id/rg_question1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
-            android:layout_marginTop="10dp">
+            android:layout_marginTop="15dp">
 
             <RadioButton
                 android:id="@+id/rb_question1_answer1"
@@ -38,6 +44,7 @@
                 android:button="@drawable/custom_radiobutton"
                 android:includeFontPadding="false"
                 android:paddingStart="10dp"
+                android:textSize="16dp"
                 android:text="I take time for myself." />
 
             <RadioButton
@@ -47,6 +54,7 @@
                 android:layout_marginBottom="10dp"
                 android:button="@drawable/custom_radiobutton"
                 android:paddingStart="10dp"
+                android:textSize="16dp"
                 android:text="I reach out to friends or family." />
 
             <RadioButton
@@ -56,6 +64,7 @@
                 android:layout_marginBottom="10dp"
                 android:button="@drawable/custom_radiobutton"
                 android:paddingStart="10dp"
+                android:textSize="16dp"
                 android:text="I exercise or participate in physical activities." />
 
             <RadioButton
@@ -65,22 +74,21 @@
                 android:layout_marginBottom="10dp"
                 android:button="@drawable/custom_radiobutton"
                 android:paddingStart="10dp"
+                android:textSize="16dp"
                 android:text="I engage in creative outlets (art, music, writing, etc.)." />
         </RadioGroup>
 
-        <!-- Submit button -->
         <Button
             android:id="@+id/btn_submit"
-            android:layout_width="match_parent"
+            android:layout_width="320dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
-            android:text="Submit" />
+            android:textSize="17dp"
+            android:layout_marginLeft="15dp"
+            app:cornerRadius = "15dp"
+            android:text="Next" />
 
     </LinearLayout>
-
-
-</ScrollView>
-
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
