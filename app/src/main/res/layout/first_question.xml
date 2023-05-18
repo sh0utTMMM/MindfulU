@@ -26,30 +26,45 @@
         <RadioGroup
             android:id="@+id/rg_question1"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp">
 
             <RadioButton
                 android:id="@+id/rb_question1_answer1"
-                android:layout_width="wrap_content"
+                android:layout_width="315dp"
                 android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:button="@drawable/custom_radiobutton"
+                android:includeFontPadding="false"
+                android:paddingStart="10dp"
                 android:text="I take time for myself." />
 
             <RadioButton
                 android:id="@+id/rb_question1_answer2"
-                android:layout_width="wrap_content"
+                android:layout_width="315dp"
                 android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:button="@drawable/custom_radiobutton"
+                android:paddingStart="10dp"
                 android:text="I reach out to friends or family." />
 
             <RadioButton
                 android:id="@+id/rb_question1_answer3"
-                android:layout_width="wrap_content"
+                android:layout_width="315dp"
                 android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:button="@drawable/custom_radiobutton"
+                android:paddingStart="10dp"
                 android:text="I exercise or participate in physical activities." />
 
             <RadioButton
                 android:id="@+id/rb_question1_answer4"
-                android:layout_width="wrap_content"
+                android:layout_width="315dp"
                 android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:button="@drawable/custom_radiobutton"
+                android:paddingStart="10dp"
                 android:text="I engage in creative outlets (art, music, writing, etc.)." />
         </RadioGroup>
 

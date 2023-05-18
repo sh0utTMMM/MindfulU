@@ -1,11 +1,13 @@
 package com.example.mooddetection
 
 import android.content.Intent
+import android.graphics.drawable.GradientDrawable
 import android.os.Bundle
 import android.widget.Button
 import android.widget.RadioButton
 import android.widget.RadioGroup
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.content.ContextCompat
 
 class FirstQuestion : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -37,5 +39,18 @@ class FirstQuestion : AppCompatActivity() {
             intent.putExtras(bundleAnswer1)
             startActivity(intent)
         }
+
+        val radioAnswer1 = findViewById<RadioButton>(R.id.rb_question1_answer1)
+        val radioAnswer2 = findViewById<RadioButton>(R.id.rb_question1_answer2)
+        val radioAnswer3 = findViewById<RadioButton>(R.id.rb_question1_answer3)
+        val radioAnswer4 = findViewById<RadioButton>(R.id.rb_question1_answer4)
+
+
+
+        radioAnswer1.background = resources.getDrawable(R.drawable.custom_radiobutton)
+        radioAnswer2.background = resources.getDrawable(R.drawable.custom_radiobutton)
+        radioAnswer3.background = resources.getDrawable(R.drawable.custom_radiobutton)
+        radioAnswer4.background = resources.getDrawable(R.drawable.custom_radiobutton)
+
     }
 }
