@@ -4,36 +4,95 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/purple"
     tools:context=".CharacterActivity">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/purple_button"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
 
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="150dp"
+            android:layout_height="68dp"
+            android:gravity="center"
+            android:text="My Profile"
+            android:textColor="@color/white"
+            android:textSize="30dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.004" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="300dp"
+        android:layout_height="350dp"
+        android:background="@drawable/background_white"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.383">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/myCharacter"
+            android:layout_width="231dp"
+            android:layout_height="244dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/img1"
+            app:civ_border_color="#FFFFFF"
+            app:civ_border_width="2dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.249" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="116dp"
+            android:layout_height="46dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="5dp"
+            android:text="User Name"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.005" />
+
+    </LinearLayout>
 
     <Button
         android:id="@+id/goToNotification"
-        android:layout_width="wrap_content"
+        android:layout_width="250dp"
         android:layout_height="wrap_content"
-        android:text="Go to notification page"
+        android:text="Continue"
+        android:textSize="25dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.499" />
+        app:layout_constraintVertical_bias="0.812" />
 
-    <de.hdodenhof.circleimageview.CircleImageView
-        android:id="@+id/myCharacter"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:background="@android:color/transparent"
-        android:src="@drawable/img1"
-        app:civ_border_color="#FFF111"
-        app:civ_border_width="2dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.249" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
