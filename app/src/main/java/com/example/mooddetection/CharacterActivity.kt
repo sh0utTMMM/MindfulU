@@ -1,11 +1,11 @@
 package com.example.mooddetection
 
 import android.content.Intent
-import android.media.Image
 import android.os.Bundle
 import android.widget.Button
 import android.widget.ImageView
 import androidx.appcompat.app.AppCompatActivity
+import com.example.mooddetection.DailyGame
 
 class CharacterActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -13,14 +13,19 @@ class CharacterActivity : AppCompatActivity() {
         setContentView(R.layout.character)
         val b = intent.extras
 
+        val goToDailyGameButton = findViewById<Button>(R.id.goToDailyGame)
+        goToDailyGameButton.setOnClickListener {
+            val intent = Intent(this@CharacterActivity, DailyGame::class.java)
+            startActivity(intent)
+        }
 
-        val ImgCharacter = findViewById<ImageView>(R.id.myCharacter);
-        if (b !== null) {
+        val ImgCharacter = findViewById<ImageView>(R.id.myCharacter)
+        if (b != null) {
             ImgCharacter.setImageResource(b.getInt("imagePath"))
         }
 
         findViewById<Button>(R.id.goToNotification).setOnClickListener {
-            val intent = Intent(this, NotificationPage::class.java)
+            val intent = Intent(this, com.example.mooddetection.NotificationPage::class.java)
             startActivity(intent)
         }
     }
