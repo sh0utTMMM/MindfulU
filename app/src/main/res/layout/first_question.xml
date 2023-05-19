@@ -11,11 +11,83 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="140dp"
+        android:layout_marginTop="104dp"
         android:orientation="vertical"
         android:padding="16dp"
         app:layout_constraintTop_toTopOf="parent"
         tools:layout_editor_absoluteX="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:orientation="horizontal"
+            android:padding="16dp"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_editor_absoluteX="0dp">
+
+            <RelativeLayout
+                android:layout_width="64dp"
+                android:layout_height="60dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/circle_purple"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.158"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.058"> <!-- Reference the circle shape here -->
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="64dp"
+                android:layout_height="60dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/circle_white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.377"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.058"> <!-- Reference the circle shape here -->
+
+                <!-- Other views in your layout -->
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="64dp"
+                android:layout_height="60dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/circle_white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.59"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.058"> <!-- Reference the circle shape here -->
+
+                <!-- Other views in your layout -->
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="64dp"
+                android:layout_height="60dp"
+                android:background="@drawable/circle_white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.798"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.058"> <!-- Reference the circle shape here -->
+
+                <!-- Other views in your layout -->
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
 
         <!-- Question 1 -->
 
@@ -24,9 +96,9 @@
         <TextView
             android:layout_width="350dp"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
             android:text="How would you rate your current mental health?"
             android:textColor="@color/white"
-            android:layout_marginLeft="20dp"
             android:textSize="20dp" />
 
         <RadioGroup
@@ -44,8 +116,8 @@
                 android:button="@drawable/custom_radiobutton"
                 android:includeFontPadding="false"
                 android:paddingStart="10dp"
-                android:textSize="16dp"
-                android:text="I take time for myself." />
+                android:text="I take time for myself."
+                android:textSize="16dp" />
 
             <RadioButton
                 android:id="@+id/rb_question1_answer2"
@@ -54,8 +126,8 @@
                 android:layout_marginBottom="10dp"
                 android:button="@drawable/custom_radiobutton"
                 android:paddingStart="10dp"
-                android:textSize="16dp"
-                android:text="I reach out to friends or family." />
+                android:text="I reach out to friends or family."
+                android:textSize="16dp" />
 
             <RadioButton
                 android:id="@+id/rb_question1_answer3"
@@ -64,8 +136,8 @@
                 android:layout_marginBottom="10dp"
                 android:button="@drawable/custom_radiobutton"
                 android:paddingStart="10dp"
-                android:textSize="16dp"
-                android:text="I exercise or participate in physical activities." />
+                android:text="I exercise or participate in physical activities."
+                android:textSize="16dp" />
 
             <RadioButton
                 android:id="@+id/rb_question1_answer4"
@@ -74,19 +146,19 @@
                 android:layout_marginBottom="10dp"
                 android:button="@drawable/custom_radiobutton"
                 android:paddingStart="10dp"
-                android:textSize="16dp"
-                android:text="I engage in creative outlets (art, music, writing, etc.)." />
+                android:text="I engage in creative outlets (art, music, writing, etc.)."
+                android:textSize="16dp" />
         </RadioGroup>
 
         <Button
             android:id="@+id/btn_submit"
             android:layout_width="320dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:textSize="17dp"
             android:layout_marginLeft="15dp"
-            app:cornerRadius = "15dp"
-            android:text="Next" />
+            android:layout_marginTop="16dp"
+            android:text="Next"
+            android:textSize="17dp"
+            app:cornerRadius="15dp" />
 
     </LinearLayout>
 

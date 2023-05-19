@@ -10,21 +10,92 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="140dp"
+        android:layout_marginTop="104dp"
         android:orientation="vertical"
         android:padding="16dp"
         app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="0dp">
+        tools:layout_editor_absoluteX="-16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:orientation="horizontal"
+            android:padding="16dp"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_editor_absoluteX="0dp">
+
+            <RelativeLayout
+                android:layout_width="64dp"
+                android:layout_height="60dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/circle_white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.158"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.058"> <!-- Reference the circle shape here -->
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="64dp"
+                android:layout_height="60dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/circle_white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.377"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.058"> <!-- Reference the circle shape here -->
+
+                <!-- Other views in your layout -->
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="64dp"
+                android:layout_height="60dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/circle_purple"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.59"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.058"> <!-- Reference the circle shape here -->
+
+                <!-- Other views in your layout -->
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="64dp"
+                android:layout_height="60dp"
+                android:background="@drawable/circle_white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.798"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.058"> <!-- Reference the circle shape here -->
+
+                <!-- Other views in your layout -->
+
+            </RelativeLayout>
+
+        </LinearLayout>
 
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:textSize="20dp"
-            android:textColor="@color/white"
             android:layout_marginLeft="20dp"
-            android:text="What type of setting makes you feel most at peace?" />
+            android:layout_marginTop="16dp"
+            android:text="What type of setting makes you feel most at peace?"
+            android:textColor="@color/white"
+            android:textSize="20dp" />
 
         <RadioGroup
             android:id="@+id/rg_question3"
@@ -41,8 +112,8 @@
                 android:button="@drawable/custom_radiobutton"
                 android:includeFontPadding="false"
                 android:paddingStart="10dp"
-                android:textSize="16dp"
-                android:text="A cozy indoor space." />
+                android:text="A cozy indoor space."
+                android:textSize="16dp" />
 
             <RadioButton
                 android:id="@+id/rb_question3_answer2"
@@ -51,8 +122,8 @@
                 android:layout_marginBottom="10dp"
                 android:button="@drawable/custom_radiobutton"
                 android:paddingStart="10dp"
-                android:textSize="16dp"
-                android:text="A quiet, secluded place." />
+                android:text="A quiet, secluded place."
+                android:textSize="16dp" />
 
             <RadioButton
                 android:id="@+id/rb_question3_answer3"
@@ -61,8 +132,8 @@
                 android:layout_marginBottom="10dp"
                 android:button="@drawable/custom_radiobutton"
                 android:paddingStart="10dp"
-                android:textSize="16dp"
-                android:text="A bustling city." />
+                android:text="A bustling city."
+                android:textSize="16dp" />
 
             <RadioButton
                 android:id="@+id/rb_question3_answer4"
@@ -71,19 +142,19 @@
                 android:layout_marginBottom="10dp"
                 android:button="@drawable/custom_radiobutton"
                 android:paddingStart="10dp"
-                android:textSize="16dp"
-                android:text="A natural setting like a forest or beach." />
+                android:text="A natural setting like a forest or beach."
+                android:textSize="16dp" />
         </RadioGroup>
 
         <Button
             android:id="@+id/btn_submit"
             android:layout_width="320dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:textSize="17dp"
             android:layout_marginLeft="15dp"
-            app:cornerRadius = "15dp"
-            android:text="Next" />
+            android:layout_marginTop="16dp"
+            android:text="Next"
+            android:textSize="17dp"
+            app:cornerRadius="15dp" />
 
     </LinearLayout>
 
