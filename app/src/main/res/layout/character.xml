@@ -33,7 +33,7 @@
     </LinearLayout>
 
     <Button
-        android:id="@+id/goToNotification"
+        android:id="@+id/goToTips"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Go to notification page"
@@ -50,7 +50,7 @@
         android:background="@drawable/background_white"
         android:gravity="center"
         android:orientation="vertical"
-        app:layout_constraintTop_toBottomOf="@id/goToNotification"
+        app:layout_constraintTop_toBottomOf="@id/goToTips"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintVertical_bias="0.499">

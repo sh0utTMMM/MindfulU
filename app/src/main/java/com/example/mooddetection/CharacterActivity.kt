@@ -24,8 +24,8 @@ class CharacterActivity : AppCompatActivity() {
             ImgCharacter.setImageResource(b.getInt("imagePath"))
         }
 
-        findViewById<Button>(R.id.goToNotification).setOnClickListener {
-            val intent = Intent(this, com.example.mooddetection.NotificationPage::class.java)
+        findViewById<Button>(R.id.goToTips).setOnClickListener {
+            val intent = Intent(this, com.example.mooddetection.TipsActivity::class.java)
             startActivity(intent)
         }
     }
