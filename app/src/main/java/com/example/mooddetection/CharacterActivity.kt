@@ -25,4 +25,8 @@ class CharacterActivity : AppCompatActivity() {
             startActivity(intent)
         }
     }
+    fun GoToNotify(view: View) {
+        val intent = Intent(this, NotificationPage::class.java)
+        startActivity(intent)
+    }
 }
