@@ -25,39 +25,29 @@ class FourthQuestion : AppCompatActivity() {
 
             val responses = IntArray(4)
 
-            if (selectedAnswerQ1 != null) {
-                responses[0] = selectedAnswerQ1
-            }
-            if (selectedAnswerQ2 != null) {
-                responses[1] = selectedAnswerQ2
-            }
-            if (selectedAnswerQ3 != null) {
-                responses[2] = selectedAnswerQ3
-            }
+
             if (radioButtonId4 != -1) {
                 val radioButton4 = findViewById<RadioButton>(radioButtonId4)
                 val index4 = radioGroup4.indexOfChild(radioButton4)
                 responses[3] = index4 + 1
             }
 
-            println("responses: ${responses.joinToString()}")
-
-            fun setImage(): Int {
-
-                // Display the image based on the user's responses
-                val imagePath = when {
-                    responses[0] == 1 && responses[1] == 2 && responses[2] == 3 && responses[3] == 4 -> R.drawable.img1
-                    responses[0] == 4 && responses[1] == 3 && responses[2] == 2 && responses[3] == 1 -> R.drawable.img2
-                    else -> R.drawable.img3
+            val bundleAnswer4 = Bundle().apply {
+                if (selectedAnswerQ1 != null) {
+                    putInt("selectedAnswerQ1", selectedAnswerQ1)
                 }
-                // Display the image here
-                return imagePath
+                if (selectedAnswerQ2 != null) {
+                    putInt("selectedAnswerQ2", selectedAnswerQ2)
+                }
+                if (selectedAnswerQ3 != null) {
+                    putInt("selectedAnswerQ3", selectedAnswerQ3)
+                }
+                putInt("selectedAnswerQ4", responses[3])
             }
 
-            val intent = Intent(this, CharacterActivity::class.java)
-            val b = Bundle()
-            b.putInt("imagePath", setImage())
-            intent.putExtras(b)
+
+            val intent = Intent(this, SpotifyPage::class.java)
+            intent.putExtras(bundleAnswer4)
             startActivity(intent)
 
         }

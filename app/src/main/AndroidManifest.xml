@@ -21,6 +21,7 @@
         <activity android:name=".FirstQuestion" />
         <activity android:name=".TipsActivity" />
         <activity android:name=".DailyGame" />
+        <activity android:name=".SpotifyPage" />
 
         <activity
             android:name=".LogInPage"

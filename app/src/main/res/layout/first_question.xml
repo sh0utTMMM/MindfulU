@@ -98,10 +98,10 @@
             android:layout_width="315dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
+            android:background="@drawable/background_white"
             android:padding="10dp"
             android:text="How would you rate your current mental health?"
             android:textColor="@color/black"
-            android:background="@drawable/background_white"
             android:textSize="20dp" />
 
         <RadioGroup
