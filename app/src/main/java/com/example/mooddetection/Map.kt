@@ -23,4 +23,8 @@ class MapActivity : AppCompatActivity() {
         val intent = Intent(this, CharacterActivity::class.java)
         startActivity(intent)
     }
+    fun GoToMap(view: View) {
+        val intent = Intent(this, Map::class.java)
+        startActivity(intent)
+    }
 }
