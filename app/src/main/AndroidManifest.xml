@@ -19,8 +19,9 @@
         <activity android:name=".FourthQuestion" />
         <activity android:name=".NotificationPage" />
         <activity android:name=".FirstQuestion" />
-        <activity android:name=".TipsActivity" />
         <activity android:name=".DailyGame" />
+        <activity android:name=".MapActivity"/>
+        <activity android:name=".TipsActivity"/>
         <activity android:name=".SpotifyPage" />
 
         <activity

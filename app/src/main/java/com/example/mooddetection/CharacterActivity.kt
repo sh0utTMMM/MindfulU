@@ -2,6 +2,7 @@ package com.example.mooddetection
 
 import android.content.Intent
 import android.os.Bundle
+import android.view.View
 import android.widget.Button
 import android.widget.ImageView
 import androidx.appcompat.app.AppCompatActivity
@@ -13,19 +14,14 @@ class CharacterActivity : AppCompatActivity() {
         setContentView(R.layout.character)
         val b = intent.extras
 
-        val goToDailyGameButton = findViewById<Button>(R.id.goToDailyGame)
-        goToDailyGameButton.setOnClickListener {
-            val intent = Intent(this@CharacterActivity, DailyGame::class.java)
-            startActivity(intent)
-        }
-
         val ImgCharacter = findViewById<ImageView>(R.id.myCharacter)
         if (b != null) {
             ImgCharacter.setImageResource(b.getInt("imagePath"))
         }
 
-        findViewById<Button>(R.id.goToTips).setOnClickListener {
-            val intent = Intent(this, com.example.mooddetection.TipsActivity::class.java)
+
+        findViewById<Button>(R.id.goToMap).setOnClickListener {
+            val intent = Intent(this, MapActivity::class.java)
             startActivity(intent)
         }
     }

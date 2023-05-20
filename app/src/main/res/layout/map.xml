@@ -1,0 +1,130 @@
+<LinearLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#6351D5"
+    android:orientation="vertical">
+
+    <!-- Top Bar -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#5948C6"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageTipsButton"
+            android:layout_width="70dp"
+            android:layout_height="34dp"
+            android:layout_weight="1"
+            android:onClick="GoToTips"
+            android:padding="2dp"
+            app:srcCompat="@drawable/tips" />
+
+        <ImageView
+            android:id="@+id/imageViewTop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/streak" />
+
+        <TextView
+            android:id="@+id/streakCount"
+            android:layout_width="wrap_content"
+            android:layout_height="34dp"
+            android:textSize="20dp"
+            android:textColor="#FFFFFF"
+            android:text="0" />
+
+        <ImageView
+            android:id="@+id/imageViewTop2"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/coins" />
+
+        <TextView
+            android:id="@+id/coinsCount"
+            android:textSize="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textColor="#FFFFFF"/>
+
+        <ImageView
+            android:id="@+id/imageViewTop8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.7"
+            android:onClick="GoToProfile"
+            android:padding="5dp"
+            app:srcCompat="@drawable/settings" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:padding="16dp">
+
+        <!-- Circle 1 -->
+        <ImageButton
+            android:layout_width="244dp"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:onClick="GoToDailyGame"
+            android:src="@drawable/map" />
+
+    </LinearLayout>
+
+    <!-- Bottom Bar -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/purple"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <ImageView
+            android:id="@+id/imageHomeButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="2dp"
+            android:onClick="GoToMap"
+            app:srcCompat="@drawable/home_button" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/shop_button" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/game_button" />
+
+        <ImageView
+            android:id="@+id/imageView8"
+            android:onClick="GoToProfile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.7"
+            android:padding="5dp"
+            app:srcCompat="@drawable/profile_button" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
