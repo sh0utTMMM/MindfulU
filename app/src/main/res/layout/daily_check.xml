@@ -1,0 +1,80 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:background="@color/purple"
+    tools:context=".ThirdQuestion">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="104dp"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp"
+            android:text="On a scale of 1 to 5, how would you rate your day today? (1 being very difficult, 4 being excellent)"
+            android:textColor="@color/black"
+            android:background="@drawable/background_white"
+            android:padding="10dp"
+            android:textSize="20dp" />
+
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+
+            <RelativeLayout
+                android:id="@+id/circle1"
+                android:layout_width="64dp"
+                android:layout_height="60dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/circle_white">
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/circle2"
+                android:layout_width="64dp"
+                android:layout_height="60dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/circle_white">
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/circle3"
+                android:layout_width="64dp"
+                android:layout_height="60dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/circle_white">
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/circle4"
+                android:layout_width="64dp"
+                android:layout_height="60dp"
+                android:background="@drawable/circle_white">
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <Button
+            android:onClick="GoToMap"
+            android:id="@+id/btn_submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_gravity="center"
+            android:text="Finish"
+            android:textSize="17dp"
+            app:cornerRadius="15dp" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

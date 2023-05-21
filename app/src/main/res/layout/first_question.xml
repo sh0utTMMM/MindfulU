@@ -95,7 +95,7 @@
         <!-- Submit button -->
 
         <TextView
-            android:layout_width="315dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
             android:padding="10dp"
@@ -113,7 +113,7 @@
 
             <RadioButton
                 android:id="@+id/rb_question1_answer1"
-                android:layout_width="315dp"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="10dp"
                 android:button="@drawable/custom_radiobutton"
@@ -124,7 +124,7 @@
 
             <RadioButton
                 android:id="@+id/rb_question1_answer2"
-                android:layout_width="315dp"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="10dp"
                 android:button="@drawable/custom_radiobutton"
@@ -134,7 +134,7 @@
 
             <RadioButton
                 android:id="@+id/rb_question1_answer3"
-                android:layout_width="315dp"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="10dp"
                 android:button="@drawable/custom_radiobutton"
@@ -144,7 +144,7 @@
 
             <RadioButton
                 android:id="@+id/rb_question1_answer4"
-                android:layout_width="315dp"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="10dp"
                 android:button="@drawable/custom_radiobutton"
@@ -155,7 +155,7 @@
 
         <Button
             android:id="@+id/btn_submit"
-            android:layout_width="320dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="15dp"
             android:layout_marginTop="16dp"
@@ -164,6 +164,5 @@
             app:cornerRadius="15dp" />
 
     </LinearLayout>
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>

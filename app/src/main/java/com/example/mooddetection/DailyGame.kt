@@ -1,10 +1,12 @@
 package com.example.mooddetection
 
+import android.content.Intent
 import android.hardware.Sensor
 import android.hardware.SensorEvent
 import android.hardware.SensorEventListener
 import android.hardware.SensorManager
 import android.os.Bundle
+import android.view.View
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.foundation.Canvas
@@ -20,6 +22,7 @@ import androidx.compose.ui.geometry.Offset
 import androidx.compose.ui.geometry.Size
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalConfiguration
+import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.platform.LocalDensity
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.lifecycleScope
@@ -111,11 +114,16 @@ class DailyGame : ComponentActivity(), SensorEventListener {
             }
         }
     }
-
+    fun GoToCheck(view: View) {
+        val intent = Intent(this, DailyCheck::class.java)
+        startActivity(intent)
+    }
     @Composable
     fun DailyGame() {
         val configuration = LocalConfiguration.current
         val density = LocalDensity.current
+        val context = LocalContext.current
+        val intent = Intent(context, DailyCheck::class.java)
 
         screenWidth = configuration.screenWidthDp.dp
         screenHeight = configuration.screenHeightDp.dp
@@ -167,6 +175,7 @@ class DailyGame : ComponentActivity(), SensorEventListener {
                 }
             }
 
+
             if (dialogVisible) {
                 AlertDialog(
                     onDismissRequest = {
@@ -178,11 +187,13 @@ class DailyGame : ComponentActivity(), SensorEventListener {
                     confirmButton = {
                         Button(
                             onClick = {
+                                val intent = Intent(context, MapActivity::class.java)
+                                context.startActivity(intent)
                                 dialogVisible = false
                                 characterPosition.value = Offset(platforms[0].position.x, platforms[0].position.y - characterSizePx)
                             }
                         ) {
-                            Text("Restart")
+                            Text("Continue")
                         }
                     }
                 )

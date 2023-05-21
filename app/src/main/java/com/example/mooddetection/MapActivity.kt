@@ -34,5 +34,9 @@ class MapActivity : AppCompatActivity() {
             startActivity(intent)
         }
     }
+    fun GoToCheck(view: View) {
+        val intent = Intent(this, DailyCheck::class.java)
+        startActivity(intent)
+    }
 
 }
