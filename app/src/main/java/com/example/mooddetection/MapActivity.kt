@@ -17,23 +17,22 @@ class MapActivity : AppCompatActivity() {
             val intent = Intent(this, DailyGame::class.java)
             startActivity(intent)
         }
-    }
-    fun GoToDailyGame(view: View) {
-        val intent = Intent(this, DailyGame::class.java)
-        startActivity(intent)
+        findViewById<ImageView>(R.id.journal).setOnClickListener{
+            val intent = Intent(this, JournalingActivity::class.java)
+            startActivity(intent)
+        }
+        findViewById<ImageView>(R.id.imageHomeButton).setOnClickListener{
+            val intent = Intent(this, MapActivity::class.java)
+            startActivity(intent)
+        }
+        findViewById<ImageView>(R.id.imageProfile).setOnClickListener{
+            val intent = Intent(this, CharacterActivity::class.java)
+            startActivity(intent)
+        }
+        findViewById<ImageView>(R.id.imageTipsButton).setOnClickListener{
+            val intent = Intent(this, TipsActivity::class.java)
+            startActivity(intent)
+        }
     }
 
-
-    fun GoToTips(view: View) {
-        val intent = Intent(this, TipsActivity::class.java)
-        startActivity(intent)
-    }
-    fun GoToProfile(view: View) {
-        val intent = Intent(this, CharacterActivity::class.java)
-        startActivity(intent)
-    }
-    fun GoToMap(view: View) {
-        val intent = Intent(this, Map::class.java)
-        startActivity(intent)
-    }
 }

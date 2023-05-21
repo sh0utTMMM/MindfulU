@@ -6,4 +6,5 @@
     <color name="green">#3CB148</color>
     <color name="lightblue">#89CFF0</color>
     <color name="purple_button">#6750A4</color>
+    <color name="purple_nav"> #5948C6 </color>
 </resources>

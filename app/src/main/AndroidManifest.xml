@@ -23,6 +23,7 @@
         <activity android:name=".MapActivity"/>
         <activity android:name=".TipsActivity"/>
         <activity android:name=".SpotifyPage" />
+        <activity android:name=".JournalingActivity" />
 
         <activity
             android:name=".LogInPage"
