@@ -1,13 +1,28 @@
-<LinearLayout
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#6351D5"
-    android:orientation="vertical">
+    android:background="@color/purple"
+    tools:context=".LogInPage">
 
     <!-- Top Bar -->
+
+    <ImageView
+        android:id="@+id/arrow"
+        android:layout_width="94dp"
+        android:layout_height="98dp"
+        android:rotation="124"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.649"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/linearLayout4"
+        app:layout_constraintVertical_bias="0.639"
+        app:srcCompat="@drawable/arrow" />
+
     <LinearLayout
+        android:id="@+id/linearLayout4"
         android:layout_width="match_parent"
         android:layout_height="45dp"
         android:background="#5948C6"
@@ -18,7 +33,7 @@
         <ImageView
             android:id="@+id/imageTipsButton"
             android:layout_width="70dp"
-            android:layout_height="34dp"
+            android:layout_height="35dp"
             android:layout_weight="1"
             android:onClick="GoToTips"
             android:padding="2dp"
@@ -35,9 +50,9 @@
             android:id="@+id/streakCount"
             android:layout_width="wrap_content"
             android:layout_height="34dp"
-            android:textSize="20dp"
+            android:text="0"
             android:textColor="#FFFFFF"
-            android:text="0" />
+            android:textSize="20dp" />
 
         <ImageView
             android:id="@+id/imageViewTop2"
@@ -48,11 +63,11 @@
 
         <TextView
             android:id="@+id/coinsCount"
-            android:textSize="20dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="0"
-            android:textColor="#FFFFFF"/>
+            android:textColor="#FFFFFF"
+            android:textSize="20dp" />
 
         <ImageView
             android:id="@+id/imageViewTop8"
@@ -65,28 +80,18 @@
 
     </LinearLayout>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:gravity="center"
-        android:padding="16dp">
 
-        <!-- Circle 1 -->
-        <ImageButton
-            android:layout_width="244dp"
-            android:layout_height="wrap_content"
-            android:background="@null"
-            android:onClick="GoToDailyGame"
-            android:src="@drawable/map" />
 
-    </LinearLayout>
+    <!-- Circle 1 -->
+
 
     <!-- Bottom Bar -->
+
     <LinearLayout
+        android:id="@+id/linearLayout3"
         android:layout_width="match_parent"
         android:layout_height="45dp"
-        android:background="@color/purple"
+        android:background="#5948C6"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -97,8 +102,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:padding="2dp"
             android:onClick="GoToMap"
+            android:padding="2dp"
             app:srcCompat="@drawable/home_button" />
 
         <ImageView
@@ -117,14 +122,136 @@
 
         <ImageView
             android:id="@+id/imageView8"
-            android:onClick="GoToProfile"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="0.7"
+            android:onClick="GoToProfile"
             android:padding="5dp"
             app:srcCompat="@drawable/profile_button" />
 
     </LinearLayout>
 
+    <ImageView
+        android:id="@+id/arrow1"
+        android:layout_width="94dp"
+        android:layout_height="98dp"
+        android:rotation="50"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.552"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.208"
+        app:srcCompat="@drawable/arrow" />
 
-</LinearLayout>
+    <ImageView
+        android:id="@+id/arrow2"
+        android:layout_width="94dp"
+        android:layout_height="98dp"
+        android:rotation="141"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.552"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.363"
+        app:srcCompat="@drawable/arrow" />
+
+    <ImageView
+        android:id="@+id/arrow3"
+        android:layout_width="94dp"
+        android:layout_height="98dp"
+        android:rotation="33"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.529"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.499"
+        app:srcCompat="@drawable/arrow" />
+
+    <ImageView
+        android:id="@+id/imageDay1"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHorizontal_bias="0.422"
+        app:layout_constraintVertical_bias="0.133"
+        app:srcCompat="@drawable/circle_purple" />
+
+    <ImageView
+        android:id="@+id/imageDay2"
+        android:layout_width="83dp"
+        android:layout_height="79dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.664"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.304"
+        app:srcCompat="@drawable/circle_white" />
+
+    <ImageView
+        android:id="@+id/iamgeDay3"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.389"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.442"
+        app:srcCompat="@drawable/circle_white" />
+
+    <ImageView
+        android:id="@+id/imageDay4"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.719"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.546"
+        app:srcCompat="@drawable/circle_white" />
+
+    <ImageView
+        android:id="@+id/imageDay5"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.528"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.729"
+        app:srcCompat="@drawable/circle_white" />
+
+    <ImageView
+        android:id="@+id/journal"
+        android:layout_width="65dp"
+        android:layout_height="70dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHorizontal_bias="0.525"
+        app:layout_constraintVertical_bias="0.725"
+        app:srcCompat="@drawable/journal" />
+
+    <ImageView
+        android:id="@+id/game"
+        android:layout_width="65dp"
+        android:layout_height="70dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.395"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.44"
+        app:srcCompat="@drawable/baseline_star_24" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
