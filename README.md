@@ -7,6 +7,7 @@ MindfulU is an app designed to provide support during the interim period between
 
 ## Demo Video
 For a closer look at the app's functionalities, follow the link: https://youtu.be/d4fTJ71Q7fQ
+For more design look at our figma,  flow 4 is the main high fidelity flow. https://www.figma.com/file/XlT4zRuwZ9Ujguh8yQBYgs/MindfulU?type=design&node-id=0%3A1&t=oY5op6geHRGACbMY-1
 
 ## Future Plans
 Our roadmap includes diversifying the app experience with additional games and features. We're also looking forward to integrating Spotify to enhance notifications and personalise the gamification aspect.
